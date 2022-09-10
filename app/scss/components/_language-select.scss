@@ -1,0 +1,38 @@
+.language-select {
+	@include flex(row, center);
+	&__item {
+		position: relative;
+		@include flex();
+		padding: 0 16px;
+		margin-right: 1px;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 32px;
+			top: 50%;
+			left: 100%;
+			transform: translateY(calc(-50% - 1px));
+			background: $white;
+		}
+		&:first-of-type {
+			padding-left: 0;
+		}
+		&:last-of-type {
+			padding-right: 0;
+			margin-right: 0;
+			&::after {
+				content: none;
+			}
+		}
+		&-content {
+			@include font(16px, 1.5);
+			color: $white;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		& input {
+			display: none;
+		}
+	}
+}

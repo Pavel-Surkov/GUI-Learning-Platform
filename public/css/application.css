@@ -3402,7 +3402,7 @@ strong {
 
 body {
   font-family: "Gilroy", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #0f0f0f;
   font-size: 1.6rem;
   height: 100%;
@@ -3620,6 +3620,87 @@ table {
       margin-bottom: 10px; }
       .select-list__option:last-child {
         margin-bottom: 0; }
+
+.language-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .language-select__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    padding: 0 16px;
+    margin-right: 1px; }
+    .language-select__item::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      top: 50%;
+      left: 100%;
+      -webkit-transform: translateY(calc(-50% - 1px));
+          -ms-transform: translateY(calc(-50% - 1px));
+              transform: translateY(calc(-50% - 1px));
+      background: #fff; }
+    .language-select__item:first-of-type {
+      padding-left: 0; }
+    .language-select__item:last-of-type {
+      padding-right: 0;
+      margin-right: 0; }
+      .language-select__item:last-of-type::after {
+        content: none; }
+    .language-select__item-content {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff;
+      display: inline-block;
+      margin-left: 10px; }
+    .language-select__item input {
+      display: none; }
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b8c5f1;
+  border-radius: 50%;
+  background: #030303;
+  display: grid;
+  place-items: center; }
+  .radio span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b8c5f1;
+    opacity: 0; }
+
+input[type='radio']:checked + .radio span {
+  opacity: 1; }
 
 .home {
   background: #2a2b43 url("../img/federico-beccari-L8126OwlroY.jpg") no-repeat;
