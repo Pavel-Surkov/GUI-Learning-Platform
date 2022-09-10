@@ -1,0 +1,47 @@
+.main {
+	&-container {
+		width: 100%;
+		max-width: $container-max-width-xls;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1560px) {
+	.main {
+		&-container {
+			max-width: $container-max-width-xl;
+		}
+	}
+}
+
+@media screen and (max-width: 1316px) {
+	.main {
+		&-container {
+			max-width: $container-max-width-lg;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.main {
+		&-container {
+			max-width: $container-max-width-md;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.main {
+		&-container {
+			max-width: $container-max-width-sm;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.main {
+		&-container {
+			max-width: calc(100% - 48px);
+		}
+	}
+}

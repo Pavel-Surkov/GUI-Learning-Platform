@@ -3386,8 +3386,7 @@ html {
       position: absolute;
       width: 100%;
       top: 0;
-      left: 0;
-      overflow: hidden; }
+      left: 0; }
     html.is-locked .header .lang__link {
       background: #fff; }
 
@@ -3402,15 +3401,15 @@ strong {
   font-weight: bold; }
 
 body {
-  font-family: "", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #0f0f0f;
   font-size: 1.6rem;
   height: 100%;
   background: #fff; }
 
 button, select, input, textarea {
-  font-family: "", sans-serif;
+  font-family: "Gilroy", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3424,7 +3423,7 @@ button, select, input, textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
-  color: #333; }
+  color: #0f0f0f; }
 
 input {
   cursor: text;
@@ -3445,21 +3444,21 @@ table {
 
 ::-webkit-input-placeholder {
   font-size: 1.6rem;
-  color: #333; }
+  color: #0f0f0f; }
 
 ::-moz-placeholder {
   font-size: 1.6rem;
-  color: #333;
+  color: #0f0f0f;
   opacity: 1; }
 
 :-moz-placeholder {
   font-size: 1.6rem;
-  color: #333;
+  color: #0f0f0f;
   opacity: 1; }
 
 :-ms-input-placeholder {
   font-size: 1.6rem;
-  color: #333; }
+  color: #0f0f0f; }
 
 :focus::-webkit-input-placeholder {
   color: transparent; }
@@ -3473,6 +3472,20 @@ table {
 :focus::-ms-input-placeholder {
   color: transparent; }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /**
  * Basic typography style for copy text
  */
@@ -3480,3 +3493,133 @@ table {
   list-style-type: none;
   padding: 0;
   margin: 0; }
+
+.main-container {
+  width: 100%;
+  max-width: 1416px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 1560px) {
+  .main-container {
+    max-width: 1200px; } }
+
+@media screen and (max-width: 1316px) {
+  .main-container {
+    max-width: 960px; } }
+
+@media screen and (max-width: 991px) {
+  .main-container {
+    max-width: 720px; } }
+
+@media screen and (max-width: 767px) {
+  .main-container {
+    max-width: 540px; } }
+
+@media screen and (max-width: 576px) {
+  .main-container {
+    max-width: calc(100% - 48px); } }
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  color: #fff; }
+  .title_size-l {
+    font-size: 24px;
+    line-height: 1.33; }
+  .title_size-m {
+    font-size: 18px;
+    line-height: 1.44; }
+  .title_size-s {
+    font-size: 14px;
+    line-height: 1.57; }
+
+.theme {
+  padding-top: 64px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  position: relative; }
+  .theme__img {
+    position: absolute;
+    top: 46px;
+    right: 0; }
+  .theme__title {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0; }
+  .theme__select {
+    text-align: left;
+    position: relative;
+    background: url("../img/select-bg.png") 100% 100%/cover;
+    min-width: 228px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 4px 3.5px;
+    cursor: pointer; }
+    .theme__select-content {
+      border-radius: 7px;
+      background: #0f0f0f;
+      padding: 9px 32px 10px 18px;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.5; }
+    .theme__select-wrapper {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      position: relative;
+      margin-right: 39px;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: fit-content; }
+  .theme-select-list {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 100%;
+    max-height: 154px;
+    padding: 16px 22px;
+    border-radius: 7px;
+    margin: 0;
+    list-style: none;
+    background: #0f0f0f;
+    overflow-y: auto; }
+    .theme-select-list__option {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff;
+      margin-bottom: 10px; }
+      .theme-select-list__option:last-child {
+        margin-bottom: 0; }
+
+.drop {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg); }
+
+.home {
+  background: #2a2b43 url("../img/federico-beccari-L8126OwlroY.jpg") no-repeat;
+  background-position: calc(50% - 50px) 0;
+  background-size: cover; }

@@ -1,0 +1,16 @@
+.title {
+	margin: 0;
+	font-weight: 700;
+	color: $white;
+	&_size {
+		&-l {
+			@include font(24px, 1.33);
+		}
+		&-m {
+			@include font(18px, 1.44);
+		}
+		&-s {
+			@include font(14px, 1.57);
+		}
+	}
+}

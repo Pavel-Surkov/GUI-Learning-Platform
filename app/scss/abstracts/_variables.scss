@@ -3,10 +3,19 @@
 // -----------------------------------------------------------------------------
 
 // Base
-$font: '', sans-serif;
+$font: 'Gilroy', sans-serif;
 $base-font-size: 16px;
 $base-path: '../';
 
+// Container widths
+$container-max-width-xls: 1416px;
+$container-max-width-xl: 1200px;
+$container-max-width-lg: 960px;
+$container-max-width-md: 720px;
+$container-max-width-sm: 540px;
+
 // Colors
 $white: #fff;
-$black: #333;
+$black: #0f0f0f;
+
+$dark-blue-250: #2a2b43;

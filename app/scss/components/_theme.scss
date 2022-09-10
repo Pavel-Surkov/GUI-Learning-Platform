@@ -1,0 +1,63 @@
+.theme {
+	padding-top: 64px;
+	width: 100%;
+	@include flex(row, center);
+	position: relative;
+	&__img {
+		position: absolute;
+		top: 46px;
+		right: 0;
+	}
+	&__title {
+		position: absolute;
+		bottom: calc(100% + 10px);
+		left: 0;
+	}
+	&__select {
+		text-align: left;
+		position: relative;
+		background: image('select-bg.png') 100% 100% / cover;
+		min-width: 228px;
+		border: 1px solid $white;
+		border-radius: 10px;
+		padding: 4px 3.5px;
+		cursor: pointer;
+		&-content {
+			border-radius: 7px;
+			background: $black;
+			padding: 9px 32px 10px 18px;
+			border: 1px solid $white;
+			color: $white;
+			@include font(16px, 1.5);
+		}
+		&-wrapper {
+			flex-grow: 1;
+			position: relative;
+			margin-right: 39px;
+			max-width: fit-content;
+		}
+	}
+	&-select {
+		&-list {
+			position: absolute;
+			top: calc(100% + 12px);
+			left: 0;
+			width: 100%;
+			max-height: 154px;
+			padding: 16px 22px;
+			border-radius: 7px;
+			margin: 0;
+			list-style: none;
+			background: $black;
+			overflow-y: auto;
+			&__option {
+				@include font(16px, 1.5);
+				color: $white;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

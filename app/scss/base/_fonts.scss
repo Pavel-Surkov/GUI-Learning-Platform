@@ -2,8 +2,16 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 @font-face {
-	font-family: 'NeueMachina';
-	src: font('NeueMachina-Medium.woff2') format('woff2'), font('NeueMachina-Medium.woff') format('woff');
+	font-family: 'Gilroy';
+	src: font('Gilroy-Bold.woff2') format('woff2'), font('Gilroy-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: font('Gilroy-Medium.woff2') format('woff2'), font('Gilroy-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
