@@ -3735,6 +3735,26 @@ input[type='radio']:checked + .radio span {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.dashboard-info {
+  position: absolute;
+  bottom: 40px;
+  max-width: 180px; }
+  .dashboard-info[data-info='speed'] {
+    right: 48px; }
+  .dashboard-info[data-info='goals'] {
+    left: 42px; }
+  .dashboard-info__number {
+    display: block;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 8px; }
+  .dashboard-info__note {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600; }
+
 .home {
   background: #2a2b43 url("../img/federico-beccari-L8126OwlroY.jpg") no-repeat;
   background-position: 50% 0;

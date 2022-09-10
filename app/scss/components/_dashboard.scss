@@ -20,4 +20,26 @@
 			}
 		}
 	}
+	&-info {
+		position: absolute;
+		bottom: 40px;
+		max-width: 180px;
+		&[data-info='speed'] {
+			right: 48px;
+		}
+		&[data-info='goals'] {
+			left: 42px;
+		}
+		&__number {
+			display: block;
+			@include font(40px, 1.2);
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+		&__note {
+			margin: 0;
+			@include font(16px, 1.5);
+			font-weight: 600;
+		}
+	}
 }
