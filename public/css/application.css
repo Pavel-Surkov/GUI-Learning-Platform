@@ -3598,10 +3598,14 @@ table {
   position: relative;
   background: url("../img/select-bg.png") 100% 100%/cover;
   min-width: 228px;
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
   border-radius: 10px;
   padding: 4px 3.5px;
   cursor: pointer; }
+  .select:hover {
+    outline: 1px solid #2ba7df; }
+  .select:active {
+    outline: none; }
   .select-wrapper {
     position: relative;
     max-width: -webkit-fit-content;
