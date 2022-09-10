@@ -3481,6 +3481,13 @@ table {
 
 @font-face {
   font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gilroy';
   src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -3497,7 +3504,10 @@ table {
 .main-container {
   width: 100%;
   max-width: 1416px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+          transform: translateX(40px); }
 
 @media screen and (max-width: 1560px) {
   .main-container {
@@ -3509,7 +3519,10 @@ table {
 
 @media screen and (max-width: 991px) {
   .main-container {
-    max-width: 720px; } }
+    max-width: 720px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; } }
 
 @media screen and (max-width: 767px) {
   .main-container {
@@ -3551,7 +3564,8 @@ table {
           align-items: center;
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
-  position: relative; }
+  position: relative;
+  margin-bottom: 56px; }
   .theme__img {
     position: absolute;
     top: 46px;
@@ -3702,7 +3716,30 @@ table {
 input[type='radio']:checked + .radio span {
   opacity: 1; }
 
+.dashboard-title {
+  margin-bottom: 59px; }
+
+.dashboard-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px; }
+
+.dashboard-numbers {
+  background: url("../img/dashboard-numbers-bg.jpg") no-repeat 50%/cover;
+  border-radius: 16px;
+  padding: 8px;
+  position: relative; }
+  .dashboard-numbers__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 .home {
   background: #2a2b43 url("../img/federico-beccari-L8126OwlroY.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover; }
+
+.blue-light-text {
+  color: #1893d5;
+  text-shadow: 0px 0px 10px #1893d5; }

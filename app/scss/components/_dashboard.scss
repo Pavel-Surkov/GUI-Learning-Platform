@@ -1,0 +1,23 @@
+.dashboard {
+	&-title {
+		margin-bottom: 59px;
+	}
+	&-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 24px;
+	}
+	&-numbers {
+		background: image('dashboard-numbers-bg.jpg') no-repeat 50% / cover;
+		border-radius: 16px;
+		padding: 8px;
+		position: relative;
+		&__img {
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

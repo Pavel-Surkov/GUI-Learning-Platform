@@ -3,6 +3,7 @@
 	width: 100%;
 	@include flex(row, center);
 	position: relative;
+	margin-bottom: 56px;
 	&__img {
 		position: absolute;
 		top: 46px;
