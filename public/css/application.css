@@ -3820,7 +3820,7 @@ table {
     .language-select__item input {
       display: none; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1065px) {
   .language-select {
     margin-bottom: 54px; }
     .language-select__radio {
