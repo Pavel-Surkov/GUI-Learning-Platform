@@ -3540,6 +3540,8 @@ table {
   top: 0;
   padding-top: 58px;
   background: url("../img/menu-bg.png") 50%/cover; }
+  .menu .main-container {
+    display: none; }
   .menu-list {
     list-style: none;
     padding: 0;
@@ -3583,7 +3585,40 @@ table {
 
 @media screen and (max-width: 1065px) {
   .menu {
-    display: none; } }
+    background: url("../img/mobile-menu-bg.png") 0 0 repeat-x;
+    width: 100vw;
+    height: 64px;
+    position: relative;
+    padding: 0; }
+    .menu .main-container {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap; }
+    .menu-list {
+      display: none; }
+    .menu-link {
+      width: 40px;
+      height: 40px; }
+      .menu-link__inner {
+        width: 30px;
+        height: 30px; }
+    .menu-img {
+      -webkit-transform: translate(0, 7px);
+          -ms-transform: translate(0, 7px);
+              transform: translate(0, 7px); } }
 
 .title {
   margin: 0;

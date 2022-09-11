@@ -6,6 +6,9 @@
 	top: 0;
 	padding-top: 58px;
 	background: image('menu-bg.png') 50% / cover;
+	& .main-container {
+		display: none;
+	}
 	&-list {
 		list-style: none;
 		padding: 0;
@@ -39,6 +42,28 @@
 
 @media screen and (max-width: 1065px) {
 	.menu {
-		display: none;
+		background: image('mobile-menu-bg.png') 0 0 repeat-x;
+		width: 100vw;
+		height: 64px;
+		position: relative;
+		padding: 0;
+		& .main-container {
+			height: 100%;
+			@include flex(row, center, space-between);
+		}
+		&-list {
+			display: none;
+		}
+		&-link {
+			width: 40px;
+			height: 40px;
+			&__inner {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		&-img {
+			transform: translate(0, 7px);
+		}
 	}
 }
