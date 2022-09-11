@@ -27,6 +27,7 @@
 	}
 	&-list {
 		position: absolute;
+		z-index: 5;
 		top: calc(100% + 12px);
 		left: 0;
 		width: 100%;

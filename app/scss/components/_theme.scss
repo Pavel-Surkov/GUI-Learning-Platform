@@ -30,5 +30,23 @@
 		& .language-select {
 			display: none;
 		}
+		&__select {
+			&-wrapper {
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.theme {
+		margin-bottom: 32px;
+		&__select {
+			min-width: auto;
+			width: 100%;
+			&-wrapper {
+				max-width: 100%;
+			}
+		}
 	}
 }

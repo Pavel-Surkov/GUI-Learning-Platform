@@ -186,3 +186,35 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.dashboard {
+		padding-bottom: 81px;
+		&-title {
+			margin-bottom: 8px;
+		}
+		&-wrapper {
+			grid-gap: 16px;
+		}
+		&-numbers {
+			&__img {
+				&.speed img {
+					min-height: 300px;
+					object-position: 0 50%;
+				}
+				&.goals img {
+					min-height: 300px;
+					object-position: 100% 50%;
+				}
+			}
+		}
+		&-info[data-info='speed'] {
+			right: 32px;
+			top: 32px;
+		}
+		&-info[data-info='goals'] {
+			left: 35px;
+			top: 32px;
+		}
+	}
+}
