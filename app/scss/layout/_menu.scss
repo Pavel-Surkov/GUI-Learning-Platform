@@ -61,6 +61,20 @@
 				width: 30px;
 				height: 30px;
 			}
+			& svg[data-role='close-menu'] {
+				display: none;
+			}
+			& svg[data-role='open-menu'] {
+				display: block;
+			}
+			&.opened {
+				& svg[data-role='close-menu'] {
+					display: block;
+				}
+				& svg[data-role='open-menu'] {
+					display: none;
+				}
+			}
 		}
 		&-img {
 			transform: translate(8px, 7px);
