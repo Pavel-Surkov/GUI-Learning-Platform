@@ -25,3 +25,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.pages {
+		padding: 22px 0 62px;
+		&-btn {
+			&.mobile-hidden {
+				display: none;
+			}
+		}
+	}
+}

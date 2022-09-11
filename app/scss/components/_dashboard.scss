@@ -216,5 +216,40 @@
 			left: 35px;
 			top: 32px;
 		}
+		&-block {
+			&__top {
+				padding: 26px 24px 0;
+			}
+			&.speed .dashboard-block__top {
+				@include flex(column);
+			}
+			&.speed .dashboard-block__top-title {
+				margin-bottom: 8px;
+			}
+			&.speed .dashboard-table {
+				& > div {
+					min-width: 480px;
+				}
+			}
+			&.speed .dashboard-table__row {
+				&:last-child {
+					border-bottom: 1px solid rgba($violet-200, 0.2);
+				}
+			}
+			&.goals .dashboard-table {
+				padding-bottom: 58px;
+				& > div {
+					min-width: 700px;
+				}
+			}
+		}
+		&-table {
+			overflow-x: auto;
+			&__row {
+				&:last-child {
+					border-bottom: 1px solid rgba($violet-200, 0.2);
+				}
+			}
+		}
 	}
 }

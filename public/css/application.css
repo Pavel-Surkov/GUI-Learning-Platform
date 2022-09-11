@@ -4034,7 +4034,39 @@ input[type='radio']:checked + .radio span {
       top: 32px; }
     .dashboard-info[data-info='goals'] {
       left: 35px;
-      top: 32px; } }
+      top: 32px; }
+    .dashboard-block__top {
+      padding: 26px 24px 0; }
+    .dashboard-block.speed .dashboard-block__top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap; }
+    .dashboard-block.speed .dashboard-block__top-title {
+      margin-bottom: 8px; }
+    .dashboard-block.speed .dashboard-table > div {
+      min-width: 480px; }
+    .dashboard-block.speed .dashboard-table__row:last-child {
+      border-bottom: 1px solid rgba(184, 197, 241, 0.2); }
+    .dashboard-block.goals .dashboard-table {
+      padding-bottom: 58px; }
+      .dashboard-block.goals .dashboard-table > div {
+        min-width: 700px; }
+    .dashboard-table {
+      overflow-x: auto; }
+      .dashboard-table__row:last-child {
+        border-bottom: 1px solid rgba(184, 197, 241, 0.2); } }
 
 .pages {
   padding: 22px 0 25px;
@@ -4074,6 +4106,12 @@ input[type='radio']:checked + .radio span {
       margin-right: 0; }
     .pages-btn_active {
       border: 1px solid #1893d5; }
+
+@media screen and (max-width: 576px) {
+  .pages {
+    padding: 22px 0 62px; }
+    .pages-btn.mobile-hidden {
+      display: none; } }
 
 .home {
   background: #2a2b43 url("../img/federico-beccari-L8126OwlroY.jpg") no-repeat;
