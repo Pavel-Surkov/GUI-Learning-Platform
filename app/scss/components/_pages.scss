@@ -1,0 +1,27 @@
+.pages {
+	padding: 22px 0 25px;
+	@include flex(row, center, center);
+	&-wrapper {
+		display: grid;
+		place-items: center;
+	}
+	&-btn {
+		margin-right: 8px;
+		display: grid;
+		place-items: center;
+		color: $blue-600;
+		@include font(16px, 1.5);
+		font-weight: 700;
+		width: 38px;
+		height: 38px;
+		border: 1px solid rgba($blue-600, 0.3);
+		border-radius: 8px;
+		box-shadow: 0 0 5px rgba($blue-600, 0.3);
+		&:last-child {
+			margin-right: 0;
+		}
+		&_active {
+			border: 1px solid $blue-600;
+		}
+	}
+}
