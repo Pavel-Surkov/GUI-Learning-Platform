@@ -1,0 +1,44 @@
+.menu {
+	position: fixed;
+	height: 100vh;
+	width: 72px;
+	left: 0;
+	top: 0;
+	padding-top: 58px;
+	background: image('menu-bg.png') 50% / cover;
+	&-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		@include flex(column, center);
+	}
+	&-item {
+		margin-bottom: 16px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&-link {
+		width: 56px;
+		height: 56px;
+		background: image('menu-btn.png') no-repeat 50% / cover;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		&__inner {
+			width: 42px;
+			height: 42px;
+			background: linear-gradient(180deg, #c9c9c9 0%, #f8f8f8 100%);
+			border: 1px solid $white;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.menu {
+		display: none;
+	}
+}
