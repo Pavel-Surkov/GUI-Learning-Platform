@@ -21,3 +21,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1065px) {
+	.theme {
+		&__img {
+			display: none;
+		}
+		& .language-select {
+			display: none;
+		}
+	}
+}

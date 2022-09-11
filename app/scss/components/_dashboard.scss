@@ -178,3 +178,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1065px) {
+	.dashboard {
+		&-wrapper {
+			grid-template-columns: 100%;
+		}
+	}
+}
