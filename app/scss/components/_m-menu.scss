@@ -12,6 +12,7 @@
 	max-width: calc(100vw - 46px);
 	max-height: calc(100vh - 144px);
 	@include flex(column, center);
+	display: none;
 	overflow-y: auto;
 	&__list {
 		margin: 0;
@@ -34,5 +35,11 @@
 			@include font(16px, 1.5);
 			margin-left: 12px;
 		}
+	}
+}
+
+@media screen and (max-width: 1065px) {
+	.m-menu {
+		@include flex(column, center);
 	}
 }
